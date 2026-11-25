@@ -124,7 +124,7 @@ I learned how to use and calibrate the Analog Water Level Sensor Module from ELE
 
 ---
 
-{Extra safety sidenote: **Do not leave the Analog Water Level Sensor Module wet and powered for a long time. Otherwise, this risks electrochemical corrosion. Only leave the sensor powered during operation, and dry the sensor after each use.**}
+**{Extra safety sidenote: Do not leave the Analog Water Level Sensor Module wet and powered for a long time. Otherwise, this risks electrochemical corrosion. Only leave the sensor powered during operation, and dry the sensor after each use.}**
 
 ---
 ## 📜 License
