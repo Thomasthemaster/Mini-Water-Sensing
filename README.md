@@ -95,7 +95,7 @@ These values are specific to the original experimental setup. Different water co
 
 For reliable results, perform calibration using the same water and positioning conditions expected during operation.
 
-{Sidenote: **This project measures immersion depth of the copper conductive traces on the water sensor, not actual tank volume or water height.**}
+{Sidenote: **This project measures immersion percentage of the copper conductive traces on the water sensor, not actual tank volume or water height.**}
 
 ---
 ## 📁 Repository Contents
