@@ -58,6 +58,44 @@ Watch the project in action + an explanation of the build:
 
 ---
 
+## 🔧 Sensor Calibration
+
+The water level sensor requires calibration because its analog output depends on water conductivity, sensor positioning, and immersion depth.
+
+### Equipment
+- ELEGOO Analog Water Level Sensor Module
+- Microcontroller
+- Water container
+- Ruler
+- Water
+
+### Calibration Procedure
+
+1. Connect the sensor's `S` pin to an Arduino analog input, `+` to 5V, and `-` to GND.
+2. Upload an analog-reading sketch that uses `analogRead()`.
+3. Open the Serial Monitor at 9600 baud.
+4. Measure the length of the exposed copper sensing area.
+5. Position the sensor vertically in the water.
+6. Immerse 25%, 50%, 75%, and 100% of the exposed copper sensing area.
+7. At each depth, record three analog readings and calculate their average.
+8. Enter the resulting average ADC values into the calibration constants in the Arduino sketch.
+
+### Original Calibration Results
+
+| Immersion | Average ADC |
+|---|---:|
+| 25% | 361.3 |
+| 50% | 383.0 |
+| 75% | 392.0 |
+| 100% | 398.7 |
+
+### Important
+
+These values are specific to the original experimental setup. Different water conductivity, temperature, sensor positioning, and sensor condition can produce different readings.
+
+For reliable results, perform calibration using the same water and positioning conditions expected during operation.
+
+---
 ## 📁 Repository Contents
 
 - `Mini_Water_Sensing_Device.ino` — Arduino source code
