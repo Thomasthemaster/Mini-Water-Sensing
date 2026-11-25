@@ -48,7 +48,7 @@ Below is the schematic generated in Tinkercad:
 
 See the project (may have some issues viewing it on desktop):
 
-[Click here](Mini_Water_Sensing_Device_Image.png)
+[Click here](Mini_Water_Sensing_Device.png)
 
 ## 🎥 Video Demonstration
 
@@ -63,7 +63,7 @@ Watch the project in action + an explanation of the build:
 - `Mini_Water_Sensing_Device.ino` — Arduino source code
 - `README.md` — Project documentation
 - `LICENSE` — Apache License 2.0
-- `Mini_Water_Sensing_Device_Image.png` — Project photo
+- `Mini_Water_Sensing_Device.png` — Project photo
 - `Schematic.png` — Coming Soon!
 
 ---
