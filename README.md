@@ -77,7 +77,7 @@ The water level sensor requires calibration because its analog output depends on
 4. Measure the length of the exposed copper sensing area.
 5. Position the sensor vertically in the water.
 6. Immerse 25%, 50%, 75%, and 100% of the exposed copper sensing area.
-7. At each depth, record three analog readings and calculate their average.
+7. At each depth, record three analog readings and calculate their average. Dry the sensor after each reading.
 8. Enter the resulting average ADC values into the calibration constants in the Arduino sketch.
 
 ### Original Calibration Results
