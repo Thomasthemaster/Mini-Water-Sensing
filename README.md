@@ -50,7 +50,7 @@ Below is the schematic generated in Tinkercad:
 
 See the project (may have some issues viewing it on desktop):
 
-[Click here](Mini_Water_Sensing_Device.png)
+[Click here](Mini_Water_Sensing_Device_NEW.png)
 
 ## 🎥 Video Demonstration
 
