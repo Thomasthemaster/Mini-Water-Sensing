@@ -5,15 +5,15 @@ A project that uses the Analog Water Level Sensor Module (AWLSM) from ELEGOO to 
 
 ## 🚀 How It Works
 
-The sensor detects how much of its copper conductive traces are submerged. Then, it prints the percentage of copper conductive traces on the sensor submerged to the Serial Monitor. If the percentage is > 0%, meaning the sensor is wet, then the blue LED will light up, signaling that the sensor is wet. The sensor calculates the percentage of copper conductive traces submerged based on calibration data.
+The sensor detects how much of its copper conductive traces are submerged. Then, it prints the percentage of copper conductive traces on the sensor submerged to the Serial Monitor. If the percentage is between 0% and 24%, the RGB LED will light RED. If the percentage is between 25% and 49%, the RGB LED will light YELLOW. If the percentage is between 50% and 74%, the RGB LED will light GREEN. If the percentage is between 75% and 99%, the RGB LED will light TEAL/CYAN. If the percentage is 100%, the RGB LED will light BLUE. The sensor calculates the percentage of copper conductive traces submerged based on calibration data.
 
 ### Hardware
 - **Development Board:** Arduino Nano
-- **Main Components:** Analog Water Level Sensor Module
+- **Main Components:** Analog Water Level Sensor Module + RGB LED
 - **Software:** Arduino IDE
 
 ### Cool Features
-- Blue LED Indicator
+- RGB LED Indicator
 
 ---
 
@@ -31,8 +31,10 @@ Instead, a Wire Pinout Table has been created to compensate:
 | Water Sensor `S` (Signal) | `A0` | Analog input |
 | Water Sensor `+` (VCC) | `5V` | Power |
 | Water Sensor `-` (GND) | `GND` | Ground |
-| Blue LED Anode (`+`) | `D2` | Connect through 220Ω resistor |
-| Blue LED Cathode (`-`) | `GND` | Ground |
+| RGB LED RED | `D6` | Connect through 220Ω resistor |
+| RGB LED Cathode (`-`) | `GND` | Ground |
+| RGB LED GREEN | `D5` | Connect through 220Ω resistor |
+| RGB LED BLUE | `D3` | Connect through 220Ω resistor |
 
 
 ### Schematic
@@ -84,10 +86,10 @@ The water level sensor requires calibration because its analog output depends on
 
 | Immersion | Average ADC |
 |---|---:|
-| 25% | 361.3 |
-| 50% | 383.0 |
-| 75% | 392.0 |
-| 100% | 398.7 |
+| 25% | 390.3 |
+| 50% | 409.0 |
+| 75% | 418.0 |
+| 100% | 427.7 |
 
 ### Important
 
@@ -112,8 +114,8 @@ For reliable results, perform calibration using the same water and positioning c
 
 - Arduino Nano Board
 - Analog Water Level Sensor Module [from ELEGOO]
-- Blue LED
-- 220 Ohm Resistor
+- RGB LED
+- 3 220 Ohm Resistors
 - Jumper wires
 
 ---
