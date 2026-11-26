@@ -56,7 +56,7 @@ See the project (may have some issues viewing it on desktop):
 
 Watch the project in action + an explanation of the build:
 
-[▶ Watch the Video](YOUTUBE_LINK_NOT_READY_YET)
+[▶ Watch the Video](https://youtu.be/folBB6Vy_Xw)
 
 ---
 
