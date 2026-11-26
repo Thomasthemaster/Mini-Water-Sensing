@@ -1,3 +1,11 @@
+/*
+Mini Water Sensing Device
+Made by Thomas Hung
+Nov 25, 2026
+
+Update pins & calibration data below!
+*/
+
 const int sensorPin = A5;
 const int r = 6;
 const int g = 5;
